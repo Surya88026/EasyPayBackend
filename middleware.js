@@ -9,7 +9,7 @@ export const authMiddleware = (req,res,next) => {
     const token = authHeader.split('')[1];
     const tokenVerification = jwt.verify(token,JWT_SECRET);
     if(!tokenVerification){
-        return res.statusCode(411);
+        return res.statusCode(411)
     }
     req.userId = tokenVerification.userId;
     next();

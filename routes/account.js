@@ -64,5 +64,5 @@ accountRouter.post('/transfer',authMiddleware,async (req,res) => {
 })
 
 module.exports ={
-    account:accountRouter
+    account:accountRouter,
 }

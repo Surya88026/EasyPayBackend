@@ -11,7 +11,7 @@ const  signupbody = z.object({
     userName:z.string().email(),
     firstName:z.string(),
     lastName:z.string(),
-    password:z.string().minLength(6)
+    password:z.string().minLength(6),
 
 })
 userRouter.post('/signup',async function(req,res){

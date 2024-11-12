@@ -8,5 +8,5 @@ rootRouter.use('/user',userRouter);
 rootRouter.use('/account',accountRouter);
 
 module.exports = {
-    rootRouter,
+    rootRouter
 }
